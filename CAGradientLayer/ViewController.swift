@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     var gradientSet = [[CGColor]]()
     var currentGradient: Int = 0
     
-    let gradientOne = UIColor(red: 48/255, green: 62/255, blue: 103/255, alpha: 1).cgColor
-    let gradientTwo = UIColor(red: 244/255, green: 88/255, blue: 53/255, alpha: 1).cgColor
-    let gradientThree = UIColor(red: 196/255, green: 70/255, blue: 107/255, alpha: 1).cgColor
+    let gradientOne = UIColor(red: 1, green: 0, blue: 0, alpha: 0.5).cgColor
+    let gradientTwo = UIColor(red: 1, green: 0, blue: 0, alpha: 0.75).cgColor
+    let gradientThree = UIColor(red: 1, green: 0, blue: 0, alpha: 1).cgColor
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         
         let gradientChangeAnimation = CABasicAnimation(keyPath: "colors")
         gradientChangeAnimation.delegate = self
-        gradientChangeAnimation.duration = 5
+        gradientChangeAnimation.duration = 1
         gradientChangeAnimation.toValue = gradientSet[currentGradient]
         gradientChangeAnimation.fillMode = kCAFillModeForwards
         gradientChangeAnimation.isRemovedOnCompletion = false
