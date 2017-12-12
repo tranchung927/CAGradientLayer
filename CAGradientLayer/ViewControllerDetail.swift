@@ -32,8 +32,8 @@ class ViewControllerDetail: UIViewController {
     
     func animateView() {
         let gradientAnimation = CABasicAnimation(keyPath: "locations")
-        gradientAnimation.fromValue = [0.0, 0.0, 0.25]
-        gradientAnimation.toValue = [0.75, 1.0, 1.0]
+        gradientAnimation.fromValue = [0.0, 0.0, 0.1]
+        gradientAnimation.toValue = [0.9, 1.0, 1.0]
         gradientAnimation.duration = 3.0
         gradientAnimation.autoreverses = false
         gradientAnimation.repeatCount = Float.infinity
